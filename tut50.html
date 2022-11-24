@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic string operations</title>
+    <script>
+        var str = "this is a string";
+        console.log(str);
+
+        //first occurence of a substring
+        var position = str.indexOf('is');
+        console.log(position);
+
+        //last occurence of a substring
+        var position = str.lastIndexOf('is');
+        console.log(position);
+
+        //substring from a string
+        //slice can take negative values too
+
+        var substr = str.slice(1,6);
+        console.log(substr);
+
+        //some more methods to create substrings
+        //substrings can't take negative values substr takes values as starting point and ending point
+
+        var substr1 = str.substr(1,3);
+        console.log(substr1);
+        
+        var replaced = str.replace('string' , 'rishabh');
+        console.log(str);
+        console.log(replaced);
+
+        console.log(str.toLocaleUpperCase());
+        //to concate two strings in javscript
+        var newstring = str.concat('new string');
+        console.log(newstring);
+
+
+        // to create whitespaces
+        var strwithwhitespaces = "   this contains      whiteapce ";
+        console.log(strwithwhitespaces);
+        console.log(strwithwhitespaces.trim());
+
+        //to extract a string/ character from a string
+
+        console.log(str[3]);
+
+        //another approach
+
+        var char2 = str.charAt(2);
+        var char3 = str.charCodeAt(2);
+        console.log(char2);
+        console.log(3);
+        console.log(3);
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

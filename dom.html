@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulating DOM</title>
+</head>
+<body>
+    <div id = "main" class="container ">
+    <ul id="nav">
+        <li>rishabh</li>
+        <li>owner</li>
+        <li>about</li>
+        <li>More about us</li>
+        <li>Contact Us</li>
+    </ul>
+    </div>
+    <div class="container">
+        Another class
+    </div>
+    <script>
+           let main = document.getElementById('main');
+           console.log(main);
+           let nav =  document.getElementById('nav');
+           console.log(nav);
+           let containers = document.getElementsByClassName('container');
+           console.log(containers);
+
+           let sel = document.querySelector('.container');
+           console.log("Selector returns" , sel);
+
+           //in order to extract the first element of the class/id by selector then ;
+
+           let selector = document.querySelector('#nav>li');
+           console.log("selector returns ", selector)
+
+           //query selector all
+
+           let all  = document.querySelectorAll('#nav>li');
+           console.log("selector returns" , all);
+
+    </script>
+</body>
+</html>

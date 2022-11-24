@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Dates</title>
+</head>
+<style>
+    .container{
+        font-size : 23px;
+        background-color: blanchedalmond;
+        border: 2px solid gray;
+        padding: 34ps;
+        margin : 4px;
+        text-align: center;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <div class="container">this is <span id="time"></span></div>
+    </div>
+    <script>
+        console.log("This is a data and timetutorial");
+
+        let now = new Date();
+        console.log(now);
+
+        // let newDate = new Data("2029-09-30");
+        // console.log(newDate)
+
+
+        //let newDate = new Date(year,month,date,hours,minutes,seconds,milisceonds);
+        let newDate = new Date(3020, 4, 6, 9, 3, 2, 34);
+        console.log(newDate);
+
+        let dt = newDate.getDate();
+        console.log("this year is " , dt);
+
+        let month = newDate.getMonth();
+        console.log("this date is " , month);
+        
+        let hours = newDate.getHours();
+        console.log("this currently ongoing hour is", hours);
+
+        let day = newDate.getUTCDay();
+        console.log("today's day is ", day);
+
+        newDate.setDate(19);
+        newDate.getMinutes(244);
+        console.log(newDate);
+        console.log(newDate);
+        newDate.setDate(26);
+        console.log(newDate);
+        
+        // function displaytime() {
+        //     time = new Date();
+        //     console.log(time);
+        //     document.getElementById('time').innerHTML = time;
+        // }
+        setInterval(updatetime , 1000);
+
+        function updatetime(){
+            time.innerHTML = new Date();
+        }
+        </script>
+</body>
+
+</html>

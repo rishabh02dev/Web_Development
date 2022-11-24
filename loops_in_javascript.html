@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loops in javascript</title>
+</head>
+
+<body>
+    <div class="container">this is a sample text</div>
+    <script>
+        console.log("this is tutorial 55");
+        let friends = ["rohan", "sanjeev", "deepti", "pooja", "SkillF"];
+        for (let index = 0; index < array.length; index++) {
+            console.log("hello friend" + friends[index]);
+
+        }
+
+        friends.forEach(function f(element){
+            console.log("hello friend" + element + "this is done by using modern javascript");
+        }
+        
+        )
+
+        for (elements of friends) {
+            console.log("hello friends" + elemnets + "to modern javascript again");
+        }
+
+        let employee = {
+            name: "harry",
+            salary : 2,
+            channel : "codewithharry"
+
+        }
+
+        //use this loop to iterate over objects in javascript
+        for (key in employee) {
+            console.log(`The ${key} of employee is ${employee[key]}`);
+        }
+
+        //while loops in js
+        let i = 0;
+        while (i < 4) {
+            console.log(`${i} is less than 4`);
+            i++
+        }
+
+        //do while loop in js
+        let j = 34;
+        do {
+            console.log(`${j} is less than 34 as it is running one time and showing in our console becuase we are in dowhile loop`)
+        } while (j<34);
+    </script>
+
+</body>
+
+</html>
