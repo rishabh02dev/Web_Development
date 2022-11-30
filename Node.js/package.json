@@ -1,0 +1,21 @@
+{
+  "name": "npm.js",
+  "version": "1.0.0",
+  "description": "this is the best package",
+  "main": "npm.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "rishabh",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "slugify": "^1.6.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
