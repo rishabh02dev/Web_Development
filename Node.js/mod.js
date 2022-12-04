@@ -12,4 +12,4 @@ module.exports = {
     name : "harry",
     repo : "Github"
 }
-module.exports.name = "rishabh";
+module.exports.name = "rishabh";  
