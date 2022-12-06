@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property in html</title>
+    <style>
+        /* * {
+            margin: 0;
+            padding: 0; */
+        /* } */
+        ul {
+            background-color: red;
+        }
+        li {
+          list-style: square outside;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            height: 70px;
+            position: sticky;
+            top: 0;
+            z-index: 1;
+        }
+
+        p {
+
+            border: 2px solid red;
+            text-align: center;
+            height: 10vh;
+
+        }
+
+        .container {
+            background-color: aqua;
+            height: 50vh;
+            width: 50vw;
+            margin: auto;
+            position: sticky;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+           
+        }
+
+        .box2 {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>home</li>
+                <li>About</li>
+                <li>Contact us</li>
+        </nav>
+    </header>
+    <div class="container">
+        <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe temporibus vero inventore assumenda
+            repudiandae nam? Ipsam dolorem unde quibusdam, vitae optio et eum tempore, maxime eaque, illo sapiente saepe
+            exercitationem perferendis ducimus aspernatur nesciunt nam! Illo numquam dolorem perspiciatis iusto?</P>
+        <div class="box">I'm a box</div>
+        <div class="box2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsa provident optio distinctio est
+            nam impedit repudiandae pariatur obcaecati eaque voluptatum aliquid laborum voluptas, repellendus voluptate
+            consequuntur corporis porro fuga, natus, accusantium incidunt.</div>
+    </div>
+    <ul>
+        <li>Apple</li>
+        <li>Oranges</li>
+        <li>Banana</li>
+    </ul>
+</body>
+
+</html>
