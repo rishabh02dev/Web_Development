@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRansitions</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 455px;
+
+        }
+
+        .box {
+            border: 2px solid black;
+            transform: translate(34px);
+            /* transform: rotate(45deg);
+            transform-origin: 0; */
+
+
+        }
+
+        .box:hover {
+            width: 100px;
+
+        }
+
+        .box {
+            transition-duration: 0.2s;
+            transition-timing-function: ease-in;
+            width: 455px;
+            transition-property: width;
+            transition-delay: 2s;
+             /* if we apply shorthand than first we need to give transition property and then timing function and then transition timing function and transition end time. */
+        }
+         
+    </style>
+    
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" id="myImage">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim ea quod iusto eius, blanditiis repellat
+            quidem fuga amet asperiores distinctio maxime reprehenderit deserunt unde vel libero eveniet ex eaque dolor
+            aut. Maxime, porro provident.
+            <button id="btn">Toggle</button>
+        </div>
+    </div>
+</body>
+<script>
+    btn.addEventListener("click", ()=>{
+       myImage.style.width = "546px";
+    })
+</script>
+
+</html>

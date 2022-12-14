@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=La+Belle+Aurore&family=Lato&display=swap');
+
+
+.flex-all-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn{
+    padding: 15px, 10px ;
+    width: 60px;
+    background-color: black;
+    color:white;
+    border: 2px solid white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+
+
+
+}
+.my-1{
+    margin: 5px 0;
+}
+.my-2{
+    margin: 26px 0;
+}
+
+.text-center{
+    text-align: center;
+}
