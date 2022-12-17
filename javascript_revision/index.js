@@ -217,3 +217,77 @@ console.log(sel)
 
 sel = document.querySelectorAll('.container')
 console.log(sel)
+
+// function clicked(){
+//     console.log("the button was clicked.")
+// }
+
+// window.onload = function(){
+//     console.log("the document was loaded")
+// }
+
+
+//Events in Javascript.
+// firstcontainer.addEventListener('click' , function(){
+//     document.querySelectorAll('.container')[1].innerHTML = <b>We have clicked.</b>
+//     console.log("clicked on container.")
+// }
+// )
+
+// firstcontainer.addEventListener('mouseover' , function(){
+//     console.log("Mouse on container.")
+// }
+// )
+// firstcontainer.addEventListener('mouseout', function(){
+//     console.log("Mouse out container.")
+// })
+// let prevHTML = document.querySelectorAll('.container')[1].innerHTML;
+// firstcontainer.addEventListener('mouseup' , function(){
+//     document.querySelectorAll('.container')[1].innerHTML = prevHTML;
+
+//     console.log("Mouseup when clicked on container.")
+// } )
+
+// firstcontainer.addEventListener('mousedown', function(){
+//     document.querySelectorAll('.container')[1].innerHTML= "<b> We have clicked.</b>" 
+//     console.log("Mousedown when clicked on container")
+// })
+
+//Arrow functions
+summ = (a,b)=>{
+    return a+b;
+}
+
+
+logkaro = ()=>{
+    document.querySelectorAll('.container')[1].innerHTML= "<b> We have clicked.</b>" 
+    console.log("I am your log")
+}
+//SetATimeout and setinterval
+
+// setTimeout(logkaro, 2000)
+
+//setinterval is used to do things repeadtelly
+
+clr = setInterval(logkaro, 5000)
+
+// use clearInterval/clearTimeout to cancel setinterval/setTimeout
+
+
+
+//local storage in javascript.
+
+
+// localStorage.setItem('name' , 'rissuu')
+// localStorage
+// localStorage.removeItem('name')
+// localStorage.clear()
+// //JSON in javascript.
+// javascript object notation
+
+// obj = {name: "rishabh" , length:1 , a: {this: "rishbah"} }
+// jso = JSON.stringify(obj);
+// console.log(typeof jso)
+// console.log(jso)
+// parsed = JSON.parse(`{"name":"rishabh","length":1,"a":{"this":"rishbah"}}`)
+// console.log(parsed);
