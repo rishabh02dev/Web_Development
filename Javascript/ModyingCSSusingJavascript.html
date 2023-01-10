@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modfying CSS</title>
+    <style>
+        #main{
+            color: red;
+            font-size: 50px;
+            text-align: center;
+            margin-top: 50px;
+            cursor: pointer;
+            transition: 2s;
+        }
+    </style>
+</head>
+<body>
+     <div id="main" onmouseenter= "modify()" onmouseleave="unmodify()">
+        Rishabh02dev
+     </div>
+     <script type = "text/javascript">
+        function modify(){
+            document.getElementById('main').style.fontSize = "200px";
+            document.getElementById('main').style.fontFamily = 'sans-serif';
+            document.getElementById('main').style.color = 'blue';
+
+        }
+        function unmodify(){
+            document.getElementById('main').style.fontSize = "50px";
+            document.getElementById('main').style.color = 'red';
+
+        }
+     </script>
+</body>
+</html>

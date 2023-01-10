@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions in Javascript</title>
+</head>
+<body>
+    <input type= "text" name="name" id ="name"/>
+    <button onclick="Greet()">Ram Ram Bolo </button>
+    <div class="greet">
+      
+    </div>
+    <script type="text/javascript">
+        function Greet() {
+            var name = document.getElementById('name').value;
+            var string = "Ram Ram shaab" + name;
+            document.getElementsByClassName('greet')[0].innerHTML = string ;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This keyword in Javascript</title>
+</head>
+
+<body>
+
+    <script>
+        var person = {
+            firstName: "Bhagirath",
+            secondName: "Giri",
+            fullName: function () {
+                return this.firstName + this.secondName;
+            }
+
+        };
+        document.write("<h1>" + person.fullName());
+    </script>
+    <br>
+    <button onclick="this.style.background = 'red'">Click me to change this colour</button>
+</body>
+
+</html>

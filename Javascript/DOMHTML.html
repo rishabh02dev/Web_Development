@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using DOM Opening and Closing Windows</title>
+</head>
+<body>
+    <button onclick="openWin()">Open</button>
+    <button onclick="closeWin()">Stop</button>
+
+    <script>
+        var win;
+        var win2;
+        function openWin(){
+            win = window.open("https://www.github.com/rishabh02dev", "width= 500px" , "height = 500px");
+            win2 = window.open();
+        }
+        function closeWin(){
+            win2 = windown.close();
+        }
+    </script>
+</body>
+</html>

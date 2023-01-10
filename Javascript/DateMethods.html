@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Methods in Javascript</title>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <button onclick = "getaDate()">Date</button>
+    <button onclick="year()">Year</button>
+    <button onclick="month()">Month</button>
+    <button onclick="hours()">Hours</button>
+    <button onclick="minutes()">Minutes</button>
+    <button onclick="DetailedTime()">Full Timings</button>
+
+    <script>
+        var Date = new Date();
+        function getaDate(){
+            document.getElementById('res').innerText = Date;
+        }
+        function year(){
+            document.getElementById('res').innerText = Date.getFullYear();
+        }
+        function month(){
+            document.getElementById('res').innerText = Date.getMonth();
+        }
+        function hours(){
+            document.getElementById('res').innerText = Date.getHours();
+        }
+        function minutes(){
+            document.getElementById('res').innerText = Date.getMinutes();
+        }
+        function DetailedTime(){
+            document.getElementById('res').innerText = Date.get
+        }
+    </script>
+</body>
+</html>

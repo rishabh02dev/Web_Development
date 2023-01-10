@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Function in javascript</title>
+</head>
+
+<body>
+    Name : <b id="name"> </b> <br>
+    <button onclick="call()">Print UserName</button>
+    <script type="text/javascript">
+        function call() {
+            var name = prompt("Enter your name sir!!", "");
+            document.getElementById('name').innerHTML = name;
+        }
+
+    </script>
+</body>
+
+</html>

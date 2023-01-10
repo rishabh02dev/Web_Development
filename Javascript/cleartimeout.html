@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settimeout function in Javascript</title>
+</head>
+<body>
+    <button onclick="start()">Start</button>
+    <button onclick="stop()">Stop</button>
+    <script>
+        var my;
+        function start(){
+            my = setTimeout(
+                function(){
+                    document.write("<h1>Rishabh Shukla</h1>")
+                },
+                5000
+            );
+            }
+        function stop(){
+                clearTimeout(my);
+                alert("Timeout Stop");
+        }
+           
+    </script>
+</body>
+</html>

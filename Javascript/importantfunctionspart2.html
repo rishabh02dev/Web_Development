@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Other Important functions in Javascript</title>
+</head>
+<body>
+        <h1 id="res"></h1>
+        <button onclick="pop()">POP</button>
+        <button onclick="push()">Push</button>
+        <button onclick="slice()">Slice</button>
+        <button onclick="reverse()">Reverse</button>
+        <button onclick= "shift()">Shift</button>
+
+    <script> 
+        //Exploring the types of functions of arrays in javascript
+        var cars = ["Car1" , "Car2" , "Car3" , "Car4" , "Car5" , "Car6"];
+        var demo = cars;
+        document.getElementById('res').innerHTML = cars;
+        //Pop Function
+        function pop(){
+            demo.pop();
+            document.getElementById('res').innerHTML = cars;
+
+        }
+        //Push function
+        function push(){
+            var x = prompt("Enter the new car which you want to add in the given array", "");
+            demo.push(x);
+            document.getElementById('res').innerHTML = cars;
+        }
+        //slice function
+        function slice(){
+            var x = demo.slice(2);
+                document.getElementById('res').innerHTML = x;
+
+            }
+        //Reverse Function
+        function reverse(){
+            demo.reverse();
+            document.getElementById('res').innerHTML = cars;
+        }
+
+        //Shift Function
+        function shift(){
+            var x = demo.shift();
+                document.getElementById('res').innerHTML = x;
+
+        }
+    </script>
+</body>
+</html>

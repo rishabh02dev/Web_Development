@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM document object model</title>
+</head>
+<body>
+    <div class="main">this is nibba developer</div>
+    <div class="main">this is nibbi developer ki choodi </div>
+    <script type="text/javascript">
+        //targeting threw class id 
+        // document.getElementById("main").innerHTML ="<h1>Welcome to my innerHTML";
+        // console.log(x);
+
+        //Now we will see how can we target by using class name
+        document.getElementsByClassName("main")[1].innerHTML = "this is nibba developer";
+        document.getElementsByClassName("main")[0].innerHTML = "this is nibbi developer ki choodi";
+        
+    </script>
+</body>
+</html>
