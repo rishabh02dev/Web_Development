@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Animation Using JS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .yellow {
+            margin-top: 10px;
+            background-color: yellow;
+            height: 400px;
+            width: 400px;
+            position: relative;
+        }
+
+        #red {
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="move()">Click Me</button>
+    <div class="yellow">
+        <div id="red"></div>
+    </div>
+    <script>
+        function move() {
+            var redElem = document.getElementById('red');
+            var poe = 0;
+            var anim = setInterval(animate, 5);
+
+
+
+            function animate() {
+                if (poe == 350) {
+                    clearInterval(anim);
+                } else {
+                    poe++;
+                    redElem.style.top = poe + "px";
+                    redElem.style.left = poe + "px";
+                }
+
+            }
+
+        }
+    </script>
+</body>
+
+</html>
