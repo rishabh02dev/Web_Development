@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Credentials using JS</title>
+    <style>
+        form {
+            width: 300px;
+            height: 300px;
+            text-align: center;
+            justify-content: center;
+        }
+
+        .main {
+            margin-left: 600px;
+            margin-top: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <form>
+            <fieldset>
+                <legend>Login Form</legend>
+                <div>
+                    <label>User Name</label>
+                    <input type="text" name="">
+                    <div class="clear"></div>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="" id="password">
+                    <div class="clear"></div>
+                </div>
+                <div>
+                    <button type="button">Login</button>
+                    <button style="width: 200px;" type="button" onclick="toggle(this)">Show Password</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+    <script>
+        var password = document.getElementById('password');
+        function toggle(elem) {
+            var type = password.getAttribute('type');
+            if (type == 'password') {
+                password.setAttribute("type", "text");
+                elem.innerText = "Hide password";
+            }
+            else {
+                password.setAttribute("type", "password");
+                elem.innerText = "Show password";
+            }
+
+        }
+    </script>
+</body>
+
+</html>
