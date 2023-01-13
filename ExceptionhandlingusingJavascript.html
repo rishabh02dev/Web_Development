@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception handling in Javascript</title>
+</head>
+
+<body>
+    <button onclick="test()">Click Me</button>
+    <h1 id="res"></h1>
+    <script>
+        //this is try and catch Method.
+        try {
+            var number = 5;
+            var x = number.toUpperCase();
+            document.getElementById('res').innerText = x;
+        }
+        catch (err) {
+            document.getElementById('res').innerText = err;
+        }
+    </script>
+</body>
+
+</html>
