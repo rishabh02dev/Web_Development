@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Validation Through JS</title>
+</head>
+
+<body>
+    <h1>Please Enter your phone number sir</h1><br>
+    <input type="text" name="" onkeyup="val(this)">
+    <div id="res"></div>
+
+    <script>
+        function val(elem) {
+            if (isNaN(elem.value)) {
+                document.getElementById('res').innerText = "Please Enter Numbers only";
+                document.getElementById('res').style.color = "red";
+
+            }
+            else {
+                document.getElementById('res').innerText = "";
+                if (elem.value.length > 10) {
+                    document.getElementById('res').innerText = "Kindly Write a Valid Number e.g   91234598XX"
+                    document.getElementById('res').style.color = "red";
+
+                }if(elem.value.length > 0 && elem.value.length<=10){
+                    document.getElementById('res').innerText = "Going good Kindly complete your phone number"
+                    document.getElementById('res').style.color = "green";
+                }
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>
