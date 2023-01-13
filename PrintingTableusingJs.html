@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Printing Tablue of any number using Javascript</title>
+    <style>
+        div{
+            border-bottom: 1px solid red;
+            width: 120px;
+            align-items: center;
+            justify-content: center;
+        }
+        h1{
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Printing the table of number using Javascript</h1>
+    <script>
+        var num =  prompt("Enter the number whose table you want to print" , "");
+        for(var i = 1; i<=10; i++){
+            document.write("<div>")
+                document.write(num + " x " + i + " = " + i*num);
+            document.write("</div>")
+        }
+
+    </script>
+</body>
+</html>
