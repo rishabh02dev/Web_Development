@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Set attribute & Get attribute</title>
+    <style>
+        .red{
+            color: red;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <!-- wokring of get attribute -->
+    <div id="test" class="red">
+        Hello EveryOne!!
+    </div>
+    <button onclick="testing()">Click</button>
+    <h1 id="res"></h1>
+    <script>
+        var data = document.getElementById("test");
+        function testing(){
+            // document.getElementById("res").innerText = data;
+            var cls = data.getAttribute("class");
+            //working of the setattribute now
+            if(cls =="red"){
+                data.setAttribute("red","blue");
+            }else{
+                data.setAttribute("blue" , "red");
+            }
+        }
+    </script>
+</body>
+</html>
