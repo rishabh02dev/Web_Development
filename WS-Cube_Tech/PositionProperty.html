@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Property</title>
+    <style>
+        .col-1{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            float: left;
+            font-size: 50px;
+            text-align: center;
+        }
+        .col-2{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            float: left;
+            font-size: 50px;
+            text-align: center;
+            position: relative;
+            /*
+                absolute just leaves it's place without getting anyother space.
+            */
+            /*
+                whereas relative moves according to the parent element i.e it's original space.
+            */
+        }
+        .col-3{
+            width: 400px;
+            height: 400px;
+            border: 2px solid black;
+            float: left;
+            font-size: 50px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="col-1">
+        <h1>1</h1>
+    </div>
+    <div class="col-2">
+        <h1>2</h1>
+    </div>
+    <div class="col-3">
+        <h1>3</h1>
+    </div>
+</body>
+</html>
