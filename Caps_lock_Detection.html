@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caps Lock Detection</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgba(0, 128, 117, 0.941);
+        }
+
+        .main {
+            width: 450px;
+            height: 550px;
+            background-color: white;
+            margin: auto;
+            margin-top: 80px;
+        }
+
+        .main .form {
+            font-size: 25px;
+            font-size: 25px;
+            padding: 10px
+        }
+
+        .btn {
+            background-color: brown;
+            width: 300px;
+            font-size: 20px;
+            height: 50px;
+            margin-top: 10px;
+            margin-left: 70px;
+        }
+
+        .main h2 {
+            padding-top: 30px;
+            padding-left: 5px;
+
+        }
+
+        .container {
+            padding: 25px;
+        }
+
+        p {
+            padding: 10px 0px;
+        }
+
+        .btn:hover {
+            background-color: yellow;
+            color: red;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Online Portfolio Maker Registration Form</h2>
+        <div class="container">
+            <form action="#" method="post">
+                <div class="form">
+                    <p>Username</p>
+                    <input type="Text" style="width: 380px; height: 40px;;" placeholder="Username" value="" name=""
+                        id="username" />
+                </div>
+                <div class="form">
+                    <p>Password</p>
+                    <input type="password" style="width: 380px; height: 40px;" value="Password" name="" placeholder=""
+                        id="password" />
+                </div>
+
+                <div class="form">
+                    <p>Confirm Password</p>
+                    <input type="password" style="width: 380px; height: 40px; " value="Confirm Password" name=""
+                        onkeyup="check(this)" placeholder="" id="confirm_password">
+                    <error id="alert"></error>
+                </div>
+            </form>
+        </div>
+        <p>
+            <error id="alert"></error>
+            <button class="btn" type="submit" value="submit">SUBMIT</button>
+        </p>
+        
+
+    </div>
+    <script>
+        window.addEventListener('keyup' , event=> {
+            var isCaps = console.log(event.getModifierState('Capslock'));
+            if(isCaps){
+                document.getElementById('alert').innerText = "WARNING! CapsLock is on";
+
+            }else{
+                document.getElementById('alert').innerText = "";
+            }
+        })
+    </script>
+</body>
+</html>
