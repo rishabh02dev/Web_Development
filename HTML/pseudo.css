@@ -1,0 +1,81 @@
+body{
+    font-family: sans-serif;
+    padding: 40px;
+}
+
+.primary-btn:link{
+    color: green;
+    padding: 10px;
+}
+
+.primary-btn:visited{
+    color: pink;
+
+}
+.primary-btn:hover{
+    color: red;
+    background-color: black;
+}
+
+.primary-btn:active{
+    color: black;
+    background-color: white;
+    border: 4px solid green;
+
+}
+
+ul li:first-child{
+    background-color: violet;
+
+}
+
+ul li:last-child {
+    background-color: red;
+}
+
+/*n-th child*/
+/* an+b*/
+/*for an+b we have to put in the value of n and b happens let's suppose you put the value of n starting from 0 there an+b happens and value of n happens till max values of children*/
+
+ul li:nth-child(2n+1){
+    background-color: green;
+}
+
+/*Pseudo Elements*/
+
+h2::first-letter {
+    /* color: violet;
+    background-color: blue; */
+    font-size: 3rem;
+}
+
+::selection{
+    color: greenyellow;
+    background-color: black;
+}
+p::first-line{
+    background-color: beige;
+}
+/*Before and After in Pseudo Elements*/
+
+h3::before{
+    content: 'any';
+}
+height::after{
+    content: '**';
+}
+
+.required::after{
+    content: '*';
+    color: red;
+}
+
+.important::after{
+    content: 'important';
+    background-color: red;
+    color: white;
+    padding: 0.2rrem;
+    font: size 0.5rem;
+    margin-left: 10px;
+    vertical-align: middle;
+}

@@ -1,0 +1,31 @@
+main{
+    border: 5px solid brown;
+    border-radius: 3px;
+    /* width: 50%;  main is used to get the dimension according to the parents */
+    width: 25%;
+}
+
+section{
+    border: 5px dashed green;
+     width: 50vw; /* view width is a absolute unit and it manages it's size according to the current space acquired by the page */
+    /* so we can say that percentage is relative to parents*/
+
+}
+
+body{
+    font-size: 2em;
+}
+
+h1{
+    font-size: 3rem;
+}
+ /* pixel us a absoulute unit*/
+     /*what is em* em is a relative unit used to*/
+
+
+header{
+    font-size: 2em;
+}
+
+/* rem works to the relative root element 
+while em works according to the element */

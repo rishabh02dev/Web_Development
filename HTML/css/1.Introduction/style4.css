@@ -1,0 +1,40 @@
+h1{
+    color: purple;
+    /* text-decoration-style: wavy;
+    text-decoration-color: aqua;
+    text-decoration: line-through;
+    text-decoration-line: underline;
+    text-decoration-style: wavy; */
+    /* color: transparent; */
+    /* text-shadow: 4px 4px 5px red  */
+    font-family:'Courier New', Courier, monospace;
+
+}
+
+a{
+    text-decoration: line-through;
+    text-decoration-line: line-through;
+    text-decoration-color: aqua;
+    text-decoration-style: wavy;
+}
+
+h1{
+    text-transform: capitalize;
+    text-decoration: underline;
+    text-decoration-color: red;
+    text-decoration-style: wavy;
+    text-align: center;
+}
+p{
+    text-indent: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-style: oblique;
+    
+
+}
+
+/* 
+Text shadow here first reperesent shadow from horizontol and second reperesent bottom in text shadow and you can give another shadow inside a text shadow */
+
+/* sans serif mai hard designs nahi hotii balki serif mai hote haii*/

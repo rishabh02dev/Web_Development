@@ -1,0 +1,18 @@
+/* Display property in CSS */
+
+
+*{
+    border: 1px solid red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p{
+    width: 50px;
+    display: inline-block;
+    width: 400px;
+}
+/* 
+block elements have properties in them and they can be editable too.
+but inline doesn't have the ability to get the required width and height in order to give them these properties you have to marke their display == display inline-block */

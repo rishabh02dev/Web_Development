@@ -1,0 +1,29 @@
+.container{
+    width: 400px;
+    height:400px;
+    background-color: steelblue;
+    margin: 80px auto;
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* transform: scaleX(0.5) scaleY(1.5);
+    transform: scaleZ(2); */
+    /* transform: skew(20deg, 40deg); */
+    /* transform: translate(20px, 40px); */
+    /* transform: rotateY(45deg); */
+    transform: rotate(45deg) scale(1.2) skew(30deg) translate(45px);
+
+}
+
+/*Scale transform is just used to scale the paticular element as it pretty clear from the above example
+Skew transform is used to make the angles from the respective x and y axis
+Translate is used to move the particular container with respect to the parent element center
+rotate is useed to rotate the particular box like if there is a pencil kind of thing. by default direction is Z index
+*/

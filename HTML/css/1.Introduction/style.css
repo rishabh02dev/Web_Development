@@ -1,0 +1,33 @@
+*{
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+#first , #second{
+    color: red;
+    background-color: black; 
+}
+
+#first{
+    background-color: yellow;
+}
+.purple{
+    color: purple !important;
+    font-family: monospace;
+}
+.highlight{
+   
+    font-weight: 300;
+    font-style: italic;
+}
+#second , #third{
+    color: red;
+}
+
+#first>p{
+    color: green;
+}
+
+/* IN css the lower the line stays the higher priority it takes*/
+/* Id selector > class selector > element selector*/
+/* plus if you have two id selector then in this case the lower one will be more prior*/

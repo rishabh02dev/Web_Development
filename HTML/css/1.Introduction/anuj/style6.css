@@ -1,0 +1,54 @@
+.container{
+    width: 300px;
+    height: 300px;
+    background-color: grey;
+    margin: 100px;
+}
+
+.box{
+    width: 100px;
+    height: 100px;
+}
+
+.red{
+    position: relative;
+    background-color: red;
+    left: 100px;
+    top: 100px;
+
+}
+
+.green{
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+.blue{
+    background-color: blue;
+    position: fixed;
+    bottom: 50px;
+    left: 50px;
+    z-index: 2;
+}
+
+.purple{
+    background-color: purple;
+    position: sticky;
+    top: 50px;
+}
+
+.spacer{
+    height: 300vh;
+}
+/* 
+relative position is used to move the particular class or id with respect to the parent element */
+
+/*Absolute is used to change it's position according the root html i.e the html tag only. plus agar yeah kisi tag ke andar hai aur vo
+tag khud relative hai toh yeah us tag ke according function karte hai wrna html ko hi relative maan ke function karte haii*/
+
+/*static as the name suggest it is fixed only that means it got fixed at a particular position on the page*/
+
+/*Sticky as the name suggest it got sticky according to the parent and leaves when the parents finishes off from the screen */

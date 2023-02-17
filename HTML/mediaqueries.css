@@ -1,0 +1,23 @@
+body{
+    background-color: red;
+}
+
+
+/* @media (width<=400px){
+    body{
+        background-color: yellow;
+    } */
+
+/* max-width means 400px ke under tak yahi laagani hai iske baad mai hutt jayeggiii or we can say till 400px */
+/*min-width means just opposite to max width min width means starting from*/
+@media (max-width:400px) and (max-width:600px){
+    body{
+        background-color: green;
+    }
+}
+
+@media (width<=200px){
+    body{
+        background-color: black;
+    }
+}
