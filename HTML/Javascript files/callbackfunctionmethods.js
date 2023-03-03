@@ -5,7 +5,7 @@ const a = [4,1,6,-2,-5,3,2,-8,6,7];
 // }
 
 // const result = a.findIndex(firstNeg);
-
+ 
 
 
 // console.log(result);
