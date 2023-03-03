@@ -6,7 +6,7 @@ console.log(nums.indexOf(8));
 console.log(nums.includes(8));
 //if doesn't found it returns false;
 
-nums.push("Tarashaa");
+nums.push("Tarashaa"); 
 nums.unshift("vaishaali");
 nums.pop();
 
