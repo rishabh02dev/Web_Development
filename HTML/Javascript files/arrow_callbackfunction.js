@@ -5,7 +5,7 @@ const greet = (count) => {
 greet(3);
 
 //Another way to write arrowfunction and it takes only one return functions
-
+ 
 //callback functions
 
 const calculate = (a,b, operation) =>{
